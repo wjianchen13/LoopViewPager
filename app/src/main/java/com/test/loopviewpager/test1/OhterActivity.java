@@ -1,4 +1,4 @@
-package com.test.loopviewpager;
+package com.test.loopviewpager.test1;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.test.loopviewpager.R;
 
 import java.util.ArrayList;
 import java.util.List;

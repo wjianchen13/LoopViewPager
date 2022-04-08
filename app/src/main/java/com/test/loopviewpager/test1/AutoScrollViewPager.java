@@ -1,4 +1,4 @@
-package com.test.loopviewpager;
+package com.test.loopviewpager.test1;
 
 import android.content.Context;
 import android.os.Handler;
@@ -17,6 +17,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+
+import com.test.loopviewpager.R;
 
 /**
  * 封装的viewpager
