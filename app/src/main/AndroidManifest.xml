@@ -20,6 +20,8 @@
         <activity android:name=".test1.Test1Activity" />
         <activity android:name=".test1.OhterActivity" />
         <activity android:name=".test2.Test2Activity" />
+        <activity android:name=".normal.ViewPagerActivity" />
+        <activity android:name=".change.ChangeActivity" />
         
     </application>
 

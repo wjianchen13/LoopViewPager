@@ -23,5 +23,23 @@
         android:onClick="onTest2"
         android:layout_marginTop="10dp"
         android:text="test2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="正常使用"
+        android:layout_marginTop="10dp"
+        android:onClick="onNormal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="删除，添加页面"
+        android:layout_marginTop="10dp"
+        android:onClick="onChange"/>
     
 </LinearLayout>

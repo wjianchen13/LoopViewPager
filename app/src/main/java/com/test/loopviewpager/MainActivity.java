@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.test.loopviewpager.change.ChangeActivity;
+import com.test.loopviewpager.normal.ViewPagerActivity;
 import com.test.loopviewpager.test1.AutoScrollViewPager;
 import com.test.loopviewpager.test1.OhterActivity;
 import com.test.loopviewpager.test1.Test1Activity;
@@ -29,5 +31,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void onTest2(View v){
         startActivity(new Intent(MainActivity.this, Test2Activity.class));
+    }
+
+    /**
+     * 清除内容
+     * @param
+     * @return
+     */
+    public void onNormal(View v) {
+        startActivity(new Intent(MainActivity.this, ViewPagerActivity.class));
+    }
+
+    /**
+     * 改变内容
+     * @param
+     * @return
+     */
+    public void onChange(View v) {
+        startActivity(new Intent(MainActivity.this, ChangeActivity.class));
     }
 }
