@@ -22,6 +22,7 @@
         <activity android:name=".test2.Test2Activity" />
         <activity android:name=".normal.ViewPagerActivity" />
         <activity android:name=".change.ChangeActivity" />
+        <activity android:name=".loop.LoopActivity" />
         
     </application>
 

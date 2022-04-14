@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.test.loopviewpager.change.ChangeActivity;
+import com.test.loopviewpager.loop.LoopActivity;
 import com.test.loopviewpager.normal.ViewPagerActivity;
 import com.test.loopviewpager.test1.AutoScrollViewPager;
 import com.test.loopviewpager.test1.OhterActivity;
@@ -50,4 +51,16 @@ public class MainActivity extends AppCompatActivity {
     public void onChange(View v) {
         startActivity(new Intent(MainActivity.this, ChangeActivity.class));
     }
+
+    /**
+     * 入口循环ViewPager
+     * @param
+     * @return
+     */
+    public void onLoop(View v) {
+        startActivity(new Intent(MainActivity.this, LoopActivity.class));
+    }
+
 }
+
+

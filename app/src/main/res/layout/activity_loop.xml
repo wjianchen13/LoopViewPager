@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.test.loopviewpager.loop.CircleViewPager
+        android:id="@+id/cv_test"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        
+        <Button
+            android:id="@+id/tv_test1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="add1"
+            android:onClick="onAdd1"
+            />
+
+        <Button
+            android:id="@+id/tv_test2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="add2"
+            android:onClick="onAdd2"
+            />
+
+        <Button
+            android:id="@+id/tv_test3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="del1"
+            android:onClick="onDel1"
+            />
+
+        <Button
+            android:id="@+id/tv_test4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="del2"
+            android:onClick="onDel2"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_test"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/tv_test5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="add3"
+            android:onClick="onAdd3"
+            />
+
+        <Button
+            android:id="@+id/tv_test6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="add4"
+            android:onClick="onAdd4"
+            />
+
+        <Button
+            android:id="@+id/tv_test7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="del3"
+            android:onClick="onDel3"
+            />
+
+        <Button
+            android:id="@+id/tv_test8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="del4"
+            android:onClick="onDel4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/tv_test9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="change1"
+            android:onClick="onChange1"
+            />
+
+        <Button
+            android:id="@+id/tv_test10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="change2"
+            android:onClick="onChange2"
+            />
+
+        <Button
+            android:id="@+id/tv_test11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="change3"
+            android:onClick="onChange3"
+            />
+
+        <Button
+            android:id="@+id/tv_test12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="change4"
+            android:onClick="onChange4"
+            />
+
+    </LinearLayout>
+    
+</LinearLayout>
