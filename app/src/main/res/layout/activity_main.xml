@@ -43,7 +43,17 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="10dp"
+        android:textAllCaps="false"
         android:text="入口循环ViewPager"
         android:onClick="onLoop"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="ViewPage源码查看"
+        android:onClick="onCustom"/>
     
 </LinearLayout>

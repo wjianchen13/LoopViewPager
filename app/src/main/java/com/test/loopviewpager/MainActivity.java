@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.test.loopviewpager.change.ChangeActivity;
+import com.test.loopviewpager.custom.CustomViewPagerActivity;
 import com.test.loopviewpager.loop.LoopActivity;
 import com.test.loopviewpager.normal.ViewPagerActivity;
 import com.test.loopviewpager.test1.AutoScrollViewPager;
@@ -59,6 +60,15 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onLoop(View v) {
         startActivity(new Intent(MainActivity.this, LoopActivity.class));
+    }
+
+    /**
+     * ViewPage源码查看
+     * @param
+     * @return
+     */
+    public void onCustom(View v) {
+        startActivity(new Intent(MainActivity.this, CustomViewPagerActivity.class));
     }
 
 }
