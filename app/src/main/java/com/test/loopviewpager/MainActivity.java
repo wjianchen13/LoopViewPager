@@ -7,17 +7,11 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.test.loopviewpager.change.ChangeActivity;
-import com.test.loopviewpager.custom.CustomViewPagerActivity;
+import com.test.loopviewpager.custom.CustomViewPagerMainActivity;
 import com.test.loopviewpager.loop.LoopActivity;
 import com.test.loopviewpager.normal.ViewPagerActivity;
-import com.test.loopviewpager.test1.AutoScrollViewPager;
-import com.test.loopviewpager.test1.OhterActivity;
 import com.test.loopviewpager.test1.Test1Activity;
-import com.test.loopviewpager.test1.ViewPagerAdapter;
 import com.test.loopviewpager.test2.Test2Activity;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     
@@ -68,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
      * @return
      */
     public void onCustom(View v) {
-        startActivity(new Intent(MainActivity.this, CustomViewPagerActivity.class));
+        startActivity(new Intent(MainActivity.this, CustomViewPagerMainActivity.class));
     }
 
 }

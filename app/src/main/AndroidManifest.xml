@@ -23,6 +23,7 @@
         <activity android:name=".normal.ViewPagerActivity" />
         <activity android:name=".change.ChangeActivity" />
         <activity android:name=".loop.LoopActivity" />
+        <activity android:name=".custom.CustomViewPagerMainActivity" />
         <activity android:name=".custom.CustomViewPagerActivity" />
         
     </application>

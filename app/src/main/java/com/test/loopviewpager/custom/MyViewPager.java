@@ -368,7 +368,7 @@ public class MyViewPager extends ViewGroup {
         mCloseEnough = (int) (CLOSE_ENOUGH * density);
         mDefaultGutterSize = (int) (DEFAULT_GUTTER_SIZE * density);
 
-        ViewCompat.setAccessibilityDelegate(this, new MyAccessibilityDelegate());
+        ViewCompat.setAccessibilityDelegate(this, new MyAccessibilityDelegate()); // 无障碍处理
 
         if (ViewCompat.getImportantForAccessibility(this)
                 == ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_AUTO) {
