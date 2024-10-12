@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.test.loopviewpager.banner.BannerActivity;
 import com.test.loopviewpager.change.ChangeActivity;
 import com.test.loopviewpager.custom.CustomViewPagerMainActivity;
 import com.test.loopviewpager.loop.LoopActivity;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * 清除内容
+     * 正常使用
      * @param
      * @return
      */
@@ -63,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onCustom(View v) {
         startActivity(new Intent(MainActivity.this, CustomViewPagerMainActivity.class));
+    }
+
+    /**
+     * banner
+     * @param
+     * @return
+     */
+    public void onTest3(View v) {
+        startActivity(new Intent(MainActivity.this, BannerActivity.class));
     }
 
 }

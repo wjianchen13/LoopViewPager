@@ -64,6 +64,7 @@ public class MainFragment extends Fragment {
                 mAdapter = new ViewPagerAdapter(getChildFragmentManager(), 3);
             }
             vpTest.setAdapter(mAdapter);
+            vpTest.setOffscreenPageLimit(3);
             tvTest = view.findViewById(R.id.tv_test);
             tvTest.setText(test);
         }
@@ -98,9 +99,20 @@ public class MainFragment extends Fragment {
      * @return
      */
     public void loadingData(String test) {
-        if(!this.test.equals(test)) {
-            clearState();
-        }
+//        if(!this.test.equals(test)) {
+//            clearState();
+//        }
+        getCurrentFragment();
+    }
+
+    /**
+     * 获取当前的fragment
+     * @return
+     */
+    private Fragment getCurrentFragment() {
+        Fragment fragment = getChildFragmentManager().findFragmentByTag("android:switcher:"+ vpTest.getId()+":"+ vpTest.getCurrentItem());
+        System.out.println("====================================> loadingData fragment: " + fragment);
+        return fragment;
     }
 
     /**
@@ -109,10 +121,19 @@ public class MainFragment extends Fragment {
     private class ViewPagerAdapter extends FragmentPagerAdapter {
 
         int num;
+        private Fragment mCurrentFragment;
 
         public ViewPagerAdapter(FragmentManager fm, int numFragments) {
             super(fm);
             num = numFragments;
+        }
+
+        /**
+         * 获取当前fragment
+         * @return
+         */
+        public Fragment getCurrentFragment() {
+            return mCurrentFragment;
         }
 
         @Override
@@ -158,7 +179,14 @@ public class MainFragment extends Fragment {
         @Override
         public void destroyItem(ViewGroup container, int position, Object object) {
             //如果注释这行，那么不管怎么切换，page都不会被销毁
-            // super.destroyItem(container, position, object);
+             super.destroyItem(container, position, object);
+        }
+
+        @Override
+        public void setPrimaryItem(ViewGroup container, int position, Object object) {
+            mCurrentFragment = (Fragment) object;
+            System.out.println("=============================> setPrimaryItem: " + object);
+            super.setPrimaryItem(container, position, object);
         }
     }
 }

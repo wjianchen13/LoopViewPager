@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.test.loopviewpager">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,7 +27,9 @@
         <activity android:name=".loop.LoopActivity" />
         <activity android:name=".custom.CustomViewPagerMainActivity" />
         <activity android:name=".custom.CustomViewPagerActivity" />
-        
+        <activity android:name=".banner.BannerActivity" />
+
+
     </application>
 
 </manifest>
